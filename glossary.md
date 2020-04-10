@@ -17,7 +17,7 @@
 8. How to create a new directory on command line? New file?
    * To create a new directory you enter mkdir Dir-Name, for file you enter touch fileName
 9. When working from the command line, we can combine commands with ______s and _____s, if needed.
-   * Strings and variables
+   * Agruments and flags
 10. Compare and contrast JSON with JS *objects.* Go back and look inside 'package.json,' for example and compare that to the *objects* we have been creating.
    * json uses their variables in quotation while objects are in quotation to indicate that it is a string. They are both similar as they both use  literal format for their objects
 11. What is the connection between EcmaScript and JavaScript?
