@@ -8,7 +8,12 @@ const today = new Date(Date.now());
 
 function getRemainingDays() {
   let total = graduation - today;
-  let getSeconds = Math.floor(total / 1000);
+  let seconds = Math.floor((total / 1000) % 60);
+  let minutes = Math.floor((total / 1000 / 60) % 60);
+  let hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  let days = Math.floor((total / (1000 * 60 * 60 * 24)) % 7);
+  let weeks = Math.floor(total / (1000 * 60 * 60 * 24 * 7));
+  return `${weeks}, ${days}`;
 }
 
 console.log(getRemainingDays());
